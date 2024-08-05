@@ -18,15 +18,14 @@
 The core of `proFile` revolves around a linked list structure that dynamically manages employee records. Each employee record is stored in a struct, which includes fields for first name, last name, employee ID, and dependents. The program ensures that dependents' names are stored in dynamically allocated memory, allowing flexibility in the number of dependents each employee can have.
 
 ### Struct Definition
-```c
-struct employee {
-    char fname[MAX_LENGTH];
-    char lname[MAX_LENGTH];
-    int empId;
-    char **dependents;
-    int numDependents;
-    struct employee *nextEmployee;
-};
+    struct employee {
+        char fname[MAX_LENGTH];
+        char lname[MAX_LENGTH];
+        int empId;
+        char **dependents;
+        int numDependents;
+        struct employee *nextEmployee;
+    };
 
 Folder Structure
 
@@ -40,8 +39,8 @@ The project follows a structured folder organization:
 To compile and run proFile, use the provided makefile. The makefile includes targets for compiling the project and cleaning up object and executable files.
 
 ## Compilation
-```bash
-make
+
+    make
 
 ## Dependencies
 - C compiler with support for C99 standard.
